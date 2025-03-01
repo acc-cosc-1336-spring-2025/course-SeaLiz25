@@ -1,19 +1,28 @@
-def get_options_ratio(option, total):
-    result = option / total 
-    
-    return float(result)
+from unittest import result
 
-def get_faculty_rating (get_options_ratio):
-    if 0.9 <=get_options_ratio <1: 
-        return "Excellent"
-    if get_options_ratio > 0.8:
-        return "Very Good"  
-    if get_options_ratio > 0.7:
-         return "Good"
-    if get_options_ratio > 0.6:
-        return "Needs Improvement"
-    if get_options_ratio <0.59:
-        return "Unnacceptable"
+def get_options_ratio(option, total):
+        ratio = option / total
+    
+        return float(ratio)
+
+def get_faculty_rating(ratio): 
+      rating = " "  
+
+      if(ratio >=.9 and ratio <1):
+             rating = "Excellent"
+      elif(ratio >=.8 and ratio <.9):
+             ratio = "Very Good"
+      elif(ratio >=.7 and ratio <.8):
+              rating = "Good"
+      elif(ratio >=0 and ratio <.59):
+             rating = "Unacceptable"
+             
+
+
+
+            
+    
+
     
     
  
