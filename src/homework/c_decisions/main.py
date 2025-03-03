@@ -15,3 +15,5 @@ def get_faculty_rating(ratio):
               rating = "Good"
       elif(ratio >=0 and ratio <.59):
              rating = "Unacceptable"
+
+main()
