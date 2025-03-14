@@ -5,15 +5,16 @@ def main():
               option = input ("option: ")
               total = input("total: ")
               return option,total
+       
        get_user_input()
 
        def get_options_ratio(option, total):
-              ratio =float(option)/float(total)
+              ratio = float(option)/float(total)
     
               return float(ratio)
 
        def get_faculty_rating(ratio): 
-              rating = " "  
+              return rating = " "ratio >=0.9 and ratio <1
 
               if(ratio >=.9 and ratio <1):
                      rating = "Excellent"
@@ -27,6 +28,6 @@ def main():
        option, total = get_user_input()
        ratio = get_options_ratio(option, total)
        rating = get_faculty_rating(ratio)
-       print(f"Faculty Rating: {rating}")
+       
 
 main()
